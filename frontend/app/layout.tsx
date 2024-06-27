@@ -18,17 +18,25 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <div className="site">
-        <Page_Name/>
-        <body className={inter.className}>
+//   return (
+//     <html lang="en">
+//       <div className="site">
+//         <Page_Name/>
+//         <body className={inter.className}>
+//           <Header/>
+//           {children}
+//           <Footer/>
+//         </body>
+//       </div>
+//     </html>
+//   );
+// }
+    return(
+      <html>
+        <body>
           <Header/>
-          {children}
           <Footer/>
         </body>
-      </div>
-      
-    </html>
+      </html>
   );
-}
+};
