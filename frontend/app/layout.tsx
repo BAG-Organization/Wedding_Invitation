@@ -4,7 +4,7 @@ import "./globals.css";
 import Page_Name from './pagename';
 import Header from './components/header';
 import Footer from './components/footer';
-
+import HomePage from './components/homepage';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,14 +20,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <div className="site">
-        <Page_Name/>
-        <body className={inter.className}>
-          <Header/>
-          {children}
-          <Footer/>
+      {/* <div className="site"> */}
+      <Page_Name/>
+      <body className={inter.className}>
+        <Header/>
+        {/* {children} */}
+        <HomePage/>
+
+        <Footer/>
         </body>
-      </div>
+      {/* </div> */}
       
     </html>
   );
